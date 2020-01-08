@@ -1,0 +1,32 @@
+{
+  "comicDefinitions": [
+    {
+      "comic": "CalvinAndHobbes",
+      "title": "Calvin and Hobbes",
+      "baseUrl": "https://www.gocomics.com/calvinandhobbes",
+      "urlPattern": "yyyy/MM/dd",
+      "type": "GOCOMICS"
+    },
+    {
+      "comic": "Peanuts",
+      "title": "Peanuts",
+      "baseUrl": "https://www.gocomics.com/peanuts",
+      "urlPattern": "yyyy/MM/dd",
+      "type": "GOCOMICS"
+    },
+    {
+      "comic": "Lio",
+      "title": "Lio",
+      "baseUrl": "https://www.gocomics.com/lio",
+      "urlPattern": "yyyy/MM/dd",
+      "type": "GOCOMICS"
+    },
+    {
+      "comic": "Garfield",
+      "title": "Garfield",
+      "baseUrl": "https://www.gocomics.com/garfield",
+      "urlPattern": "yyyy/MM/dd",
+      "type": "GOCOMICS"
+    }
+  ]
+}
