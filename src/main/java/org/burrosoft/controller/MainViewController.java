@@ -52,7 +52,7 @@ public class MainViewController {
     @FXML
     public void buttonExitClicked(Event e) {
         System.out.println("Exit!");
-        System.exit(1);
+        System.exit(0);
     }
 
     @FXML
