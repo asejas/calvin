@@ -1,4 +1,4 @@
-package org.burrosoft.business;
+package org.burrosoft.ui;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

@@ -1,4 +1,4 @@
-package org.burrosoft.controller;
+package org.burrosoft.ui.controller;
 
 import javafx.collections.FXCollections;
 import javafx.event.Event;
@@ -73,13 +73,12 @@ public class MainViewController {
         updateComicView();
     }
 
-    private void updateComicView(){
+    private void updateComicView() {
         String comicSelected = this.comboBoxComic.getValue();
         System.out.println("ComicSelected: " + comicSelected);
-        if(StringUtil.isBlank(comicSelected)){
+        if (StringUtil.isBlank(comicSelected)) {
             webViewComic.getEngine().loadContent("<HTML/>");
-        }
-        else {
+        } else {
             try {
                 String htmlContent = appManager.getGeneratedComicPageForDate(comicDefinitionsMap,
                         comicDefinitionsMap.get(comicSelected).getComic(),

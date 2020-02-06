@@ -1,4 +1,4 @@
-package org.burrosoft.service;
+package org.burrosoft.business;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,7 +15,6 @@ public class HTMLReader {
     public String getImageUrl(Document doc){
         String imageUrl="";
         Elements featureItems=doc.getElementsByAttributeValue("data-shareable-model","FeatureItem");
-        System.out.println("ELEMENTOOOOO "+featureItems.text());
         if(!featureItems.isEmpty()){
             imageUrl = featureItems.first().attributes().get("data-image");
         }

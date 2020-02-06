@@ -6,5 +6,5 @@ module org.burrosoft {
     requires org.jsoup;
     exports org.burrosoft;
     exports org.burrosoft.model;
-    exports org.burrosoft.controller;
+    exports org.burrosoft.ui.controller;
 }

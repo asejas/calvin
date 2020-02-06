@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.ComboBox?>
 <VBox fx:id="vbox"
-      xmlns:fx="http://javafx.com/fxml" fx:controller="org.burrosoft.controller.MainViewController">
+      xmlns:fx="http://javafx.com/fxml" fx:controller="org.burrosoft.ui.controller.MainViewController">
     <style>
         -fx-padding: 20 5 25 5;
         -fx-spacing: 5;
