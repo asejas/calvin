@@ -1,0 +1,20 @@
+.mainvbox{
+   -fx-padding: 5 5 5 5;
+   -fx-spacing: 5;
+   -fx-pref-width: 930;
+   -fx-pref-height: 550;
+}
+
+.lefthbox{
+   -fx-padding: 5 5 5 5;
+   -fx-spacing: 5;
+   -fx-alignment: center-left;
+   -fx-width: 50%;
+}
+
+.righthbox{
+   -fx-padding: 5 5 5 5;
+   -fx-spacing: 5;
+   -fx-alignment: center-right;
+   -fx-width: 50%;
+}
