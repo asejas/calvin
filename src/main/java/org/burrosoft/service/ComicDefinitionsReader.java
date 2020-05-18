@@ -16,9 +16,12 @@ public class ComicDefinitionsReader {
     }
 
     public ComicDefinitions getDefinitions() throws IOException {
-        return mapper.readValue(
-                Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(definitionsPath)),
-                ComicDefinitions.class);
+        PersistenseService persistenseService=new PersistenseService();
+        ComicDefinitions comicDefinitions=new ComicDefinitions();
+        comicDefinitions.setComicDefinitions(
+                persistenseService.loadComicDefinitions()
+        );
+        return comicDefinitions;
     }
 
     public String getAsString(ComicDefinitions comicDefinitions) throws JsonProcessingException {

@@ -4,6 +4,7 @@ import org.burrosoft.model.ComicDefinition;
 import org.burrosoft.model.ComicDefinitions;
 import org.burrosoft.service.ComicDefinitionsReader;
 import org.burrosoft.service.HTMLReader;
+import org.burrosoft.service.PersistenseService;
 import org.burrosoft.util.DateUtils;
 import org.jsoup.nodes.Document;
 
@@ -25,7 +26,6 @@ public class AppManager {
     }
 
     public Map<String, ComicDefinition> getComicDefinitionsMap() throws IOException {
-
         ComicDefinitions comicDefinitions = comicDefinitionsReader.getDefinitions();
         System.out.println("DEFINITIONS: " + comicDefinitionsReader.getAsString(comicDefinitions));
         Map<String, ComicDefinition> comicDefinitionMap = new HashMap();
@@ -59,9 +59,8 @@ public class AppManager {
                 LocalDateTime.now());
     }
 
-    public String getGeneratedComicPageForDate(Map<String, ComicDefinition> comicDefinitionsMap, String comic,
+    public String getGeneratedComicPageForDate(ComicDefinition comicDefinition,
                                                LocalDateTime dateTime) throws IOException {
-        ComicDefinition comicDefinition=comicDefinitionsMap.get(comic);
         Document document = this.getHtmlPageForDate(comicDefinition, dateTime);
         return getGeneratedComicForFormattedDate(comicDefinition,
                 document,

@@ -2,6 +2,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.web.WebView?>
+<?import javafx.scene.text.Text?>
 <VBox fx:id="vbox"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.burrosoft.controller.MainViewController"
@@ -16,6 +17,7 @@
             <Button fx:id="buttonPrevious" text="Previous" onAction="#buttonPreviousClicked"/>
             <Button fx:id="buttonExit" text="Exit" onAction="#buttonExitClicked"/>
             <Button fx:id="buttonNext" text="Next" onAction="#buttonNextClicked"/>
+
         </HBox>
     </HBox>
     <WebView fx:id="webViewComic" GridPane.fillHeight="true"/>

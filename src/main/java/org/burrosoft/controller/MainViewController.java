@@ -81,8 +81,8 @@ public class MainViewController {
         }
         else {
             try {
-                String htmlContent = appManager.getGeneratedComicPageForDate(comicDefinitionsMap,
-                        comicDefinitionsMap.get(comicSelected).getComic(),
+                String htmlContent = appManager.getGeneratedComicPageForDate(
+                        comicDefinitionsMap.get(comicSelected),
                         currentDate);
                 System.out.println("HTML loaded! .. " + htmlContent);
                 webViewComic.getEngine().loadContent(htmlContent);
